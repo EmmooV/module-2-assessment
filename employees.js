@@ -23,10 +23,11 @@
 class Employee {
     constructor(name, shifts){
         this.name = name;
-        this.shift = shift;
-        getSchedule(); {
-            console.log(`${this.name} works on ${this.shifts}`); 
-        }
+        this.shifts = shifts;
+    }
+    getSchedule() {
+        console.log(`${this.name} works on ${this.shifts}`); 
+    
     }       
     
 }
@@ -120,7 +121,7 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-var manager = new Manager("winston", "weekday mornings, weekday afternoons", )
+var manager = new Manager("winston", "weekday mornings, weekday afternoons", ["Cece", "Schmidt"])
 
 /*
     Call the `getEmployees` method on the
@@ -136,7 +137,7 @@ var manager = new Manager("winston", "weekday mornings, weekday afternoons", )
 */
 
 //CODE HERE 
-manager.getEmployees('Coach');
+manager.addEmployees('Coach');
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 

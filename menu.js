@@ -200,10 +200,10 @@ const filteredFood = foodArr.filter(food => {
 function filterByProperty(property, number, type){
     let filteredArr = []
         if (type === above){
-            filteredArr = foodArr.filter(food => food[property])
+            filteredArr = foodArr.filter(food => food[property] > number);
         } else if (type === below){
-            filteredArr= foodArr.filter(food => food[property])
-        }return filteredArr
+            filteredArr= foodArr.filter(food => food[property] < number);
+        }return filteredArr;
     }
 
 /*

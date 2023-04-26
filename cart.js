@@ -35,10 +35,9 @@ const cart = [
 
 //CODE HERE
 
-let sum = 0;
-cart.forEach(function(item)); {
-    sum += item.price;
-}
+const sum = cart.reduce((total,item) => {
+    return total +item.price;
+}, 0);
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -85,17 +84,15 @@ function calcFinalPrice(cartTotal, couponValue, tax){
 
 /*
     TEXT ANSWER HERE
-
+//name: "joe",// string, identifies customer by name
+//email: "joe.john@gmail.com",// string, so you can send emails to them
+//phone: "8016872395",// string, so you can text their number
+//address://object, has street city state and zip inside, so you can send them things 
 */
-name: "joe"
-email: "joe.john@gmail.com"
-phone: "8016872395"
-address: {
-    street: "1235 maple tree"
-    city: "sandy"
-    state: "utah"
-    zip: "88888"
-}
+
+
+
+
 /*
     Now, create a customer object following your own
     guidelines.
@@ -103,14 +100,14 @@ address: {
 
 //CODE HERE
 const customer = {
-    name: "joe"
-    email: "joe.john@gmail.com"
-    phone: "8016872395"
+    name: "joe",
+    email: "joe.john@gmail.com",
+    phone: "8016872395",
     address: {
 
-    street: "1235 maple tree"
-    city: "sandy"
-    state: "utah"
+    street: "1235 maple tree",
+    city: "sandy",
+    state: "utah",
     zip: "88888"
 }
 }

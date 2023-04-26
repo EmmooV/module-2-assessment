@@ -58,7 +58,7 @@ class Ticket {
 */
 
 //CODE HERE
-var firstTicket  = new Ticket([pizza, bread, soda], "7:30 PM", 575)
+var firstTicket  = new Ticket([pizza, bread, soda], "7:30 PM", 575);
 
 /*
     Call the `updateStatus` method on
